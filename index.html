@@ -14,8 +14,8 @@
     <div class="sidebar">
       <div class="branding">
         <div class="navigation-row">
-          <img src="./images/dashboard.svg" class="nav-icon" alt="Dashboard icon">
-          <div class="navigation">Dashboard</div>
+          <img src="./images/dashboard.svg" class="nav-icon" id="dashboard-icon" alt="Dashboard icon">
+          <div id="branding-dashboard" class="navigation">Dashboard</div>
         </div>
       </div>
 
@@ -81,17 +81,24 @@
         <div class="profile-container">
           <img src="./images/notification.svg" class="nav-icon" alt="Notification bell icon">
           <img src="./images/dog.jpg" class="profile-pic" alt="Cartoon dog">
-          <div>Morgan Oakley</div>
+          <div>Jerry Bach</div>
         </div>
       </div>
 
       <div class="header-second-row">
-        <img src="./images/dog.jpg" class="profile-pic" alt="Cartoon dog">
-        <div>Hi there,</div>
-        <div>account name</div>
-        <button class="header-button">New</button>
-        <button class="header-button">Upload</button>
-        <button class="header-button">Share</button>
+        <div class="intro-container">
+          <img src="./images/dog.jpg" id="intro-profile-icon" class="profile-pic" alt="Cartoon dog">
+          <div class="user-container">
+            <div id="greeting" >Hi there,</div>
+            <div>Jerry Bach (@jerry)</div>
+          </div>
+        </div>
+
+        <div class="dashboard-buttons">
+          <button class="header-button">New</button>
+          <button class="header-button">Upload</button>
+          <button class="header-button">Share</button>
+        </div>
       </div>
 
 
@@ -99,66 +106,105 @@
 
     <div class="main-content">
       <div class="tile-container">
-        Your Projects
+        <div id="main-project">Your Projects</div>
         <div class="project-tiles">
-          <div class="tile-title">Super Cool Project</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Super Cool Project</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="tile-buttons">
+            <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+            <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+            <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+          </div>
         </div>
         <div class="project-tiles">
-          <div class="tile-title">Less Cool Project</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Less Cool Project</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="tile-buttons">
+            <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+            <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+            <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+          </div>
         </div>
         <div class="project-tiles">
-          <div class="tile-title">Impossible App</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Impossible App</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="tile-buttons">
+            <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+            <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+            <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+          </div>
         </div>
         <div class="project-tiles">
-          <div class="tile-title">Easy Peasy App</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Easy Peasy App</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+            <div class="tile-buttons">
+              <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+              <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+              <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+            </div>
         </div>
         <div class="project-tiles">
-          <div class="tile-title">Ad Blocker</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Ad Blocker</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="tile-buttons">
+            <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+            <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+            <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+          </div>
         </div>
         <div class="project-tiles">
-          <div class="tile-title">Money Maker</div>
-          <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          <div class="title-desc">
+            <div class="tile-title">Money Maker</div>
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="tile-buttons">
+            <img src="./images/star.svg" class="nav-icon" alt="Star add icon">
+            <img src="./images/eye.svg" class="nav-icon" alt="Eye add icon">
+            <img src="./images/fork.svg" class="nav-icon" alt="Branch fork icon">
+          </div>
         </div>
       </div>
 
-      <div class="announcement-container">
-        Announcements
-        <div class="announcements">
-          <div class="announcement-title">Site Maintenance</div>
-          <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+      <div class="right-main">
+        <div class="announcement-container">
+          <div>Announcements</div>
+          <div class="announcements">
+            <div class="announcement-title">Site Maintenance</div>
+            <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="announcements">
+            <div class="announcement-title">Community Share Day</div>
+            <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
+          <div class="announcements">
+            <div class="announcement-title">Updated Privacy Policy</div>
+            <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+          </div>
         </div>
-        <div class="announcements">
-          <div class="announcement-title">Community Share Day</div>
-          <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
+        <div class="div trending-container">
+          <img src="./images/panda.jpg" class="profile-pic" alt="Cartoon panda">
+          <div class="trending-user">@tegan</div>
+          <div class="trending-project">World Peace Builder</div>
+          <img src="./images/dog.jpg" class="profile-pic" alt="Cartoon dog">
+          <div class="trending-user">@morgan</div>
+          <div class="trending-project">Super Cool Project</div>
+          <img src="./images/dino.jpg" class="profile-pic" alt="Cartoon dinosaur">
+          <div class="trending-user">@kendall</div>
+          <div class="trending-project">Life Changing App</div>
+          <img src="./images/sloth.jpg" class="profile-pic" alt="Cartoon sloth">
+          <div class="trending-user">@alex</div>
+          <div class="trending-project">No Traffic Maker</div>
         </div>
-        <div class="announcements">
-          <div class="announcement-title">Updated Privacy Policy</div>
-          <div class="announcement-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis neque cumque illo aliquam libero exercitationem, quo, ipsa laborum perferendis voluptate quia rem veritatis praesentium est corrupti? Animi, sapiente. Praesentium.</div>
-        </div>
-      </div>
-
-      <div class="div trending-container">
-        <img src="./images/panda.jpg" class="profile-pic" alt="Cartoon panda">
-        <div class="trending-user">@tegan</div>
-        <div class="trending-project">World Peace Builder</div>
-
-        <img src="./images/dog.jpg" class="profile-pic" alt="Cartoon dog">
-        <div class="trending-user">@morgan</div>
-        <div class="trending-project">Super Cool Project</div>
-
-        <img src="./images/dino.jpg" class="profile-pic" alt="Cartoon dinosaur">
-        <div class="trending-user">@kendall</div>
-        <div class="trending-project">Life Changing App</div>
-
-        <img src="./images/sloth.jpg" class="profile-pic" alt="Cartoon sloth">
-        <div class="trending-user">@alex</div>
-        <div class="trending-project">No Traffic Maker</div>
-  
       </div>
 
     </div>
