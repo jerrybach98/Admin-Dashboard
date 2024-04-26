@@ -1,2 +1,2 @@
 # Admin-Dashboard
-HTML and CSS
+HTML and CSS with emphasis on grid
